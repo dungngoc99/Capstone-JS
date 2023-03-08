@@ -62,7 +62,7 @@ function renderProducts(products) {
         <tr>
             <td>${index + 1}</td>
             <td>${product.name}</td>
-            <td>${Intl.NumberFormat("vn-VN").format(product.price)}</td>
+            <td>${Intl.NumberFormat("vn-VN").format(product.price)}$</td>
             <td>
                 <img src="${product.img}" width="150" height="150" /> 
             </td>
