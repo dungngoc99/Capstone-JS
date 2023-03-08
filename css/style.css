@@ -45,7 +45,7 @@ header > .showCart {
 .carousel {
   margin-top: 90px;
   z-index: 10;
-  background-image: url("../../img/main-bg.jpg");
+  background-image: url("https://media.istockphoto.com/id/1362422378/photo/abstract-blurred-purple-background-light-spot-on-dark-background.jpg?b=1&s=170667a&w=0&k=20&c=amYN1DW4JOaYvCIpmjXigJVNVYQzEpDX0HiTBFW6IF8=");
 }
 .carousel .carousel__select .card-group {
   gap: 20px;
