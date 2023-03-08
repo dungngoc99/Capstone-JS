@@ -1,0 +1,72 @@
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel {
+  margin-top: 90px;
+  z-index: 10;
+  background-image: url("../../img/main-bg.jpg");
+  @extend .bg;
+
+  & .carousel__select {
+    & .card-group {
+      gap: 20px;
+
+      & .form-select {
+        display: block;
+        padding: 5px 7px;
+        line-height: 1.5;
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+      }
+    }
+  }
+  & .carousel__products {
+    & .card-group {
+      margin: auto;
+      row-gap: 20px;
+      & .btn__add {
+        background-color: $bg-color-purple-dark;
+        color: $color-white;
+        transition: 0.3s;
+        font-weight: 600;
+        &:hover {
+          background-color: $color-white;
+          box-shadow: $color-purple-dark 0px 0px 10px;
+          color: $color-purple-dark;
+          transform: scale(1.1);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.modal__carousel {
+  .modal-header {
+    color: $color-white;
+  }
+
+  .modal-footer .button__purchase {
+    background-color: $bg-color-purple-dark;
+    color: $color-white;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@include responsive("lg") {
+  .carousel__products {
+    .card-group {
+      gap: 0 !important;
+
+      .card {
+        width: 48%;
+        margin: 5px;
+        flex: unset;
+      }
+    }
+  }
+}

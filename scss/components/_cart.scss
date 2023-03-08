@@ -1,0 +1,15 @@
+.table__cart {
+  td {
+    vertical-align: middle;
+  }
+  img {
+    height: 70px;
+    object-fit: cover;
+  }
+  .quantity__button {
+    margin: 0 4px;
+    padding: 2px 6px;
+    border: none;
+    background-color: transparent;
+  }
+}

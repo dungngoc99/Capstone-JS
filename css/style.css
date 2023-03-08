@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+.card-group > .card {
+  flex: unset;
+}
+
+header {
+  background-color: #080508;
+  height: 90px;
+  width: 100%;
+  color: #fff !important;
+}
+header > .navbar {
+  padding-top: 25px;
+}
+header > .navbar > .navbar-collapse > .navbar-brand {
+  font-size: 25px;
+  font-weight: 600;
+}
+header > .showCart {
+  color: #fff !important;
+}
+
+.bg, .carousel {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel {
+  margin-top: 90px;
+  z-index: 10;
+  background-image: url("../../img/main-bg.jpg");
+}
+.carousel .carousel__select .card-group {
+  gap: 20px;
+}
+.carousel .carousel__select .card-group .form-select {
+  display: block;
+  padding: 5px 7px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+.carousel .carousel__products .card-group {
+  margin: auto;
+  row-gap: 20px;
+}
+.carousel .carousel__products .card-group .btn__add {
+  background-color: #533d56;
+  color: #fff;
+  transition: 0.3s;
+  font-weight: 600;
+}
+.carousel .carousel__products .card-group .btn__add:hover {
+  background-color: #fff;
+  box-shadow: #533d56 0px 0px 10px;
+  color: #533d56;
+  transform: scale(1.1);
+  font-weight: 700;
+}
+
+.modal__carousel .modal-header {
+  color: #fff;
+}
+.modal__carousel .modal-footer .button__purchase {
+  background-color: #533d56;
+  color: #fff;
+  transition: 0.3s;
+}
+.modal__carousel .modal-footer .button__purchase:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 992px) {
+  .carousel__products .card-group {
+    gap: 0 !important;
+  }
+  .carousel__products .card-group .card {
+    width: 48%;
+    margin: 5px;
+    flex: unset;
+  }
+}
+.carouselAd {
+  margin-top: 5rem;
+}
+.carouselAd .carouselAd__content .card__header {
+  margin: 2rem;
+  color: #533d56;
+}
+.carouselAd .carouselAd__content .card__header h1 {
+  text-transform: uppercase;
+}
+.carouselAd .carouselAd__content .card__body #btnAddProduct {
+  background-color: #533d56;
+  color: #fff;
+  transition: 0.3s;
+}
+.carouselAd .carouselAd__content .card__body #btnAddProduct:hover {
+  opacity: 0.8;
+}
+.carouselAd .carouselAd__content .card__body #tableProduct {
+  overflow-x: auto;
+}
+.carouselAd .carouselAd__modal .modal-header {
+  background-color: #533d56;
+  color: #fff;
+}
+.carouselAd .carouselAd__modal .modal-footer .btn__addProduct,
+.carouselAd .carouselAd__modal .modal-footer .btn__updateProduct {
+  background-color: #533d56;
+  color: #fff;
+  transition: 0.3s;
+}
+.carouselAd .carouselAd__modal .modal-footer .btn__addProduct:hover,
+.carouselAd .carouselAd__modal .modal-footer .btn__updateProduct:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 992px) {
+  .carouselAd .carouselAd__content .card__header h1 {
+    font-size: 2.5rem;
+  }
+}
+.table__cart td {
+  vertical-align: middle;
+}
+.table__cart img {
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.table__cart .quantity__button {
+  margin: 0 4px;
+  padding: 2px 6px;
+  border: none;
+  background-color: transparent;
+}
+
+table.dataTable > thead .sorting, table.dataTable > thead .sorting_asc, table.dataTable > thead .sorting_desc, table.dataTable > thead .sorting_asc_disabled, table.dataTable > thead .sorting_desc_disabled {
+  cursor: pointer;
+  position: relative;
+}
+table.dataTable > thead .sorting::before, table.dataTable > thead .sorting_asc::before, table.dataTable > thead .sorting_desc::before, table.dataTable > thead .sorting_asc_disabled::before, table.dataTable > thead .sorting_desc_disabled::before {
+  right: 1em;
+  content: "↑";
+}
+table.dataTable > thead .sorting_asc::before, table.dataTable > thead .sorting_desc::after {
+  opacity: 1;
+}
+table.dataTable > thead > tr > th:not(.sorting_disabled), table.dataTable > thead > tr > td:not(.sorting_disabled) {
+  padding-right: 30px;
+}
+table.dataTable > thead > tr > th:active, table.dataTable > thead > tr > td:active {
+  outline: none;
+}
+table.dataTable > thead .sorting::after, table.dataTable > thead .sorting_asc::after, table.dataTable > thead .sorting_desc::after, table.dataTable > thead .sorting_asc_disabled::after, table.dataTable > thead .sorting_desc_disabled::after {
+  right: 0.5em;
+  content: "↓";
+}
+table.dataTable > thead .sorting::before, table.dataTable > thead .sorting::after, table.dataTable > thead .sorting_asc::before, table.dataTable > thead .sorting_asc::after, table.dataTable > thead .sorting_desc::before, table.dataTable > thead .sorting_desc::after, table.dataTable > thead .sorting_asc_disabled::before, table.dataTable > thead .sorting_asc_disabled::after, table.dataTable > thead .sorting_desc_disabled::before, table.dataTable > thead .sorting_desc_disabled::after {
+  position: absolute;
+  bottom: 0.9em;
+  display: block;
+  opacity: 0.3;
+}
+table.table-bordered.dataTable th,
+table.table-bordered.dataTable td {
+  border-left-width: 0;
+}/*# sourceMappingURL=style.css.map */

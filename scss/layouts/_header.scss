@@ -1,0 +1,19 @@
+header {
+  background-color: $color-black;
+  height: $header-height;
+  width: 100%;
+  color: $color-white !important;
+
+  & > .navbar {
+    padding-top: 25px;
+    & > .navbar-collapse {
+      & > .navbar-brand {
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+  }
+  & > .showCart {
+    color: $color-white !important;
+  }
+}
